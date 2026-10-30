@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Buku - Gramedia.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar (Poin 2) -->
+    <div class="top-bar">
+        <a href="home.html">Home</a>
+        <a href="cabang.html">Toko Kami / Cabang</a>
+        <a href="supplier.html">Supplier</a>
+        <a href="identitas.html">Identitas Toko Buku</a>
+        <a href="kontak.html">Hubungi Kami</a>        
+		<a href="sumber.html">Sumber</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+<a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+    <span>Papyros_bookcorner</span>
+</a>
+
+
+        <div class="nav-center">
+            <div class="category-dropdown">
+                <button class="btn-category">☰ Kategori</button>
+                <div class="dropdown-menu">
+                    <a href="products.html">Komputer & Teknologi</a>
+                    <a href="products.html">Fiksi & Sastra</a>
+                    <a href="products.html">Agama & Spiritual</a>
+                </div>
+            </div>
+
+        <div class="nav-right">
+            <a href="kontak.html"><button class="btn-masuk">Masuk</button></a>
+            <a href="kontak.html"><button class="btn-daftar">Daftar</button></a>
+        </div>
+    </nav>
+
+    <!-- Main Content Form Request -->
+    <div class="container">
+        <div class="request-wrapper">
+            <!-- Header Card -->
+            <div class="request-header">
+                <h2>📝 Formulir Request Buku</h2>
+                <p>Buku yang Anda cari belum tersedia? Isi formulir di bawah ini dan kami akan bantu mencarikannya!</p>
+            </div>
+
+            <!-- Body Form -->
+            <div class="request-body">
+                <form id="requestForm" onsubmit="handleRequest(event)">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama Pemesan</label>
+                            <input type="text" id="nama" class="form-input" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email / No. WA</label>
+                            <input type="text" id="email" class="form-input" placeholder="Email atau No. WhatsApp" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="judul">Judul Buku yang Dicari</label>
+                        <input type="text" id="judul" class="form-input" placeholder="Contoh: Laut Bercerita, Harry Potter, dll." required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="penulis">Penulis / Penerbit</label>
+                            <input type="text" id="penulis" class="form-input" placeholder="Nama Penulis atau Penerbit">
+                        </div>
+                        <div class="form-group">
+                            <label for="kondisi">Kondisi Buku yang Diinginkan</label>
+                            <select id="kondisi" class="form-input">
+                                <option value="baru">Buku Baru (New Arrival)</option>
+                                <option value="second">Buku Bekas (Second Hand)</option>
+                                <option value="bebas">Bisa Baru atau Bekas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="catatan">Catatan Tambahan (Edisi, ISBN, atau Keterangan Lain)</label>
+                        <textarea id="catatan" class="form-input" placeholder="Tuliskan detail khusus jika ada..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-request-submit">Kirim Request Buku ✨</button>
+                </form>
+
+                <!-- Pesan Berhasil -->
+                <div class="success-message" id="successMsg">
+                    🎉 Permintaan buku Anda telah kami terima! Tim kami akan menghubungi Anda melalui Kontak/Email setelah buku tersedia.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+    <span>Papyros_bookcorner</span>
+</a>
+            <div class="footer-slogan">Toko Buku & Perpustakaan Layanan Baca di Tempat</div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2026 Papyros</div>
+        </div>
+    </footer>
+
+    <!-- Script Interaktif -->
+    <script>
+        function handleRequest(event) {
+            event.preventDefault();
+            document.getElementById('requestForm').style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

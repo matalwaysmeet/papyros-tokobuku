@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langganan Newsletter - Gramedia.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar (Poin 2) -->
+    <div class="top-bar">
+        <a href="home.html">Home</a>
+        <a href="cabang.html">Toko Kami / Cabang</a>
+        <a href="supplier.html">Supplier</a>
+        <a href="identitas.html">Identitas Toko Buku</a>
+        <a href="kontak.html">Hubungi Kami</a>        
+		<a href="sumber.html">Sumber</a>
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+<a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+    <span>Papyros_bookcorner</span>
+</a>
+
+        <div class="nav-center">
+            <div class="category-dropdown">
+                <button class="btn-category">☰ Kategori</button>
+                <div class="dropdown-menu">
+                    <a href="products.html">Komputer & Teknologi</a>
+                    <a href="products.html">Fiksi & Sastra</a>
+                    <a href="products.html">Agama & Spiritual</a>
+                </div>
+            </div>
+
+        <div class="nav-right">
+            <a href="kontak.html"><button class="btn-masuk">Masuk</button></a>
+            <a href="kontak.html"><button class="btn-daftar">Daftar</button></a>
+        </div>
+    </nav>
+
+    <!-- Content Utama Form Subscribe -->
+    <div class="container">
+        <div class="subscribe-wrapper">
+            <!-- Header Card -->
+            <div class="subscribe-header">
+                <h2>📩 Langganan Info & Promo Eksklusif</h2>
+                <p>Jadilah yang pertama mendapatkan update buku terbaru dan promo diskon spesial!</p>
+            </div>
+
+            <!-- Body Form -->
+            <div class="subscribe-body">
+                <!-- Keuntungan Berlangganan -->
+                <div class="benefit-list">
+                    <div class="benefit-item">🏷️ Diskon Spesial</div>
+                    <div class="benefit-item">📚 Rekomendasi Buku</div>
+                    <div class="benefit-item">🎁 Voucher Event</div>
+                </div>
+
+                <form id="subscribeForm" onsubmit="handleSubscribe(event)">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" class="form-input" placeholder="Masukkan nama Anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="contoh: email@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pilih Kategori Minat Anda (Opsional)</label>
+                        <div class="interest-chips">
+                            <div class="interest-chip">
+                                <input type="checkbox" id="cat1">
+                                <label for="cat1">Fiksi & Novel</label>
+                            </div>
+                            <div class="interest-chip">
+                                <input type="checkbox" id="cat2">
+                                <label for="cat2">Komputer & IT</label>
+                            </div>
+                            <div class="interest-chip">
+                                <input type="checkbox" id="cat3">
+                                <label for="cat3">Pengembangan Diri</label>
+                            </div>
+                            <div class="interest-chip">
+                                <input type="checkbox" id="cat4">
+                                <label for="cat4">Komik & Manga</label>
+                            </div>
+                            <div class="interest-chip">
+                                <input type="checkbox" id="cat5">
+                                <label for="cat5">Agama & Filosofi</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-subscribe-submit">Gabung Langganan Sekarang ✨</button>
+                </form>
+
+                <!-- Pesan Berhasil -->
+                <div class="success-message" id="successMsg">
+                    🎉 Terima kasih telah berlangganan! Konfirmasi telah dikirimkan ke email Anda.
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+    <span>Papyros_bookcorner</span>
+</a>
+            <div class="footer-slogan">Toko Buku & Perpustakaan Layanan Baca di Tempat</div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2026 Papyros</div>
+        </div>
+    </footer>
+    <!-- Script Interaktif -->
+    <script>
+        function handleSubscribe(event) {
+            event.preventDefault();
+            document.getElementById('subscribeForm').style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
