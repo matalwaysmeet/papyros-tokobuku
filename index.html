@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Online Terbesar & Terpercaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar (Poin 2) -->
+    <div class="top-bar">
+        <a href="home.html">Home</a>
+        <a href="cabang.html">Toko Kami / Cabang</a>
+        <a href="supplier.html">Supplier</a>
+        <a href="identitas.html">Identitas Toko Buku</a>
+        <a href="kontak.html">Hubungi Kami</a>        
+		<a href="sumber.html">Sumber</a>
+    </div>
+
+    <!-- Navigation Bar (Poin 1 & 2) -->
+    <nav class="navbar">
+<a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+    <span>Papyros_bookcorner</span>
+</a>
+
+
+        <div class="nav-center">
+            <!-- Dropdown Kategori -->
+            <div class="category-dropdown">
+                <button class="btn-category">☰ Kategori</button>
+                <div class="dropdown-menu">
+                    <a href="products.html">Fiksi & Sastra Indonesia</a>
+                    <a href="products.html">Fiksi & Sastra Klasik Dunia</a>
+                    <a href="products.html">Non Fiksi & Self Improvement</a>
+                    <a href="products.html">Manga/Manhwa/Komik/Light Novel</a>
+                </div>
+            </div>
+
+        <div class="nav-right">
+            <a href="forsmsubs.html"><button class="btn-masuk">Masuk</button></a>
+            <a href="formsubs.html"><button class="btn-daftar">Daftar</button></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Banner / Image Slider (Poin 3) -->
+        <div class="slider-container">
+            <div class="slides" id="slides">
+                <div class="slide"><img src="img/PROMO.jpg" alt="Banner 1" onerror="this.src='https://via.placeholder.com/1200x320?text=Promo+Buku+1'"></div>
+                <div class="slide"><img src="img/DISKON.jpg" alt="Banner 2" onerror="this.src='https://via.placeholder.com/1200x320?text=Diskon+Special+2'"></div>
+                <div class="slide"><img src="img/NA.jpg" alt="Banner 3" onerror="this.src='https://via.placeholder.com/1200x320?text=New+Arrival+Buku'"></div>
+            </div>
+            <button class="slider-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
+        </div>
+
+        <!-- Quick Navigation Cards (Poin 4 - Pengganti Bags, dll) -->
+       <!-- Quick Navigation Cards (5 Pilihan) -->
+<div class="quick-nav">
+    <a href="newarrival.html" class="quick-card" style="opacity: 0.6;">
+        <span class="quick-icon">✨</span>
+        <span class="quick-title">New Arrival</span>
+    </a>
+    <a href="pemesanan.html" class="quick-card">
+        <span class="quick-icon">🛒</span>
+        <span class="quick-title">Pemesanan Buku</span>
+    </a>
+    
+    <a href="formsubs.html" class="quick-card">
+        <span class="quick-icon">📩</span>
+        <span class="quick-title">Subscribe (Informasi)</span>
+    </a>
+    
+    <a href="formpesan.html" class="quick-card">
+        <span class="quick-icon">📝</span>
+        <span class="quick-title">Request Buku</span>
+    </a>
+</div>
+
+        <!-- Kategori Terlaris (Poin 5) -->
+        <div class="section-title">Kategori Terlaris</div>
+        <div class="category-grid">
+            <a href="products.html" class="cat-card" img src="img/komik.png">
+                <span>Komik, Manga, Manhwa</span>
+            </a>
+            <a href="products.html" class="cat-card" img src="img/romantis.png">
+                <span>Fiksi Romantis</span>
+            </a>
+            <a href="products.html" class="cat-card" img src="img/fantasi.png">
+                <span>Fiksi Fantasi</span>
+            </a>
+            <a href="products.html" class="cat-card" img src="img/sejarah.png">
+                <span>Fiksi Sejarah</span>
+            </a>
+            <a href="products.html" class="cat-card" img src="img/misteri.png">
+                <span>Fiksi Misteri & Detektif</span>
+            </a>
+        </div>
+
+        <!-- Buku Terlaris (Poin 5) -->
+        <div class="section-header">
+            <div class="section-title">Buku Terlaris</div>
+            <a href="products.html" class="see-all">Lihat Semua</a>
+        </div>
+
+        <div class="books-grid">
+            <a href="products.html" class="book-card">
+                <img src="img/lb.jpg" class="book-img" alt="Buku">
+                <div class="book-author">Leila S. Chudori</div>
+                <div class="book-title">Laut Bercerita</div>
+                <div class="book-price">Rp 70.000</div>
+            </a>
+            <a href="products.html" class="book-card">
+                <img src="img/atom.jpg" class="book-img" alt="Buku">
+                <div class="book-author">James Clear</div>
+                <div class="book-title">Atomic Habits</div>
+                <div class="book-price">Rp 80.000</div>
+            </a>
+            <a href="products.html" class="book-card">
+                <img src="img/janji.jpg" class="book-img" alt="Buku">
+                <div class="book-author">Tere Liye</div>
+                <div class="book-title">Janji</div>
+                <div class="book-price">Rp 60.000</div>
+            </a>
+            <a href="products.html" class="book-card">
+                <img src="img/rumah.jpg" class="book-img" alt="Buku">
+                <div class="book-author">J.S. Khairen</div>
+                <div class="book-title">Rumah: Sebuah Novel</div>
+                <div class="book-price">Rp 67.200</div>
+            </a>
+            <a href="products.html" class="book-card">
+                <img src="img/teka.jpg" class="book-img" alt="Buku">
+                <div class="book-author">Uketsu</div>
+                <div class="book-title">Teka-Teki Gambar Aneh</div>
+                <div class="book-price">Rp 70.200</div>
+            </a>
+            <a href="products.html" class="book-card">
+                <img src="img/let.jpg" class="book-img" alt="Buku">
+                <div class="book-author">Mel Robbins</div>
+                <div class="book-title">The Let Them Theory</div>
+                <div class="book-price">Rp 85.200</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer (Poin 6) -->
+    <footer>
+        <div class="footer-top">
+            <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+    <span>Papyros_bookcorner</span>
+</a>
+            <div class="footer-slogan">Toko Buku & Perpustakaan Layanan Baca di Tempat</div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2026 Papyros</div>
+        </div>
+
+
+        <div class="footer-links">
+            <div class="footer-col">
+                <h4>Produk</h4>
+                <ul>
+                    <li><a href="newarrival.html">Buku Baru</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informasi</h4>
+                <ul>
+                    <li><a href="formsubs.html">Subscribe Newsletter</a></li>
+                    <li><a href="formpesan.html">Request Buku Baru</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tentang Kami</h4>
+                <ul>
+                    <li><a href="profil.html">Identitas Toko</a></li>
+                    <li><a href="cabang.html">Cabang Toko Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kerja Sama</h4>
+                <ul>
+                    <li><a href="supplier.html">Supplier / Pemasok</a></li>
+                    <li><a href="kontak.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>© 2026 Papyros</div>
+        </div>
+    </footer>
+
+    <!-- Script Slider otomatis & manual -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.getElementById('slides');
+        const totalSlides = 3;
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${currentSlide * 33.333}%)`;
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            updateSlide();
+        }
+
+        // Auto Slide setiap 4 detik
+        setInterval(() => {
+            moveSlide(1);
+        }, 4000);
+    </script>
+</body>
+</html>
